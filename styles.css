@@ -1,0 +1,275 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #1992D4;
+    color: white;
+    padding: 24px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container {
+    background: green;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.user-links,
+.system-links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.link-items {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.link-items img {
+    width: 22px;
+}
+
+header {
+    background: white;
+    padding: 20px 40px;
+
+    display: grid;
+    gap: 50px;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search form {
+    flex: 1;
+}
+
+
+.search input {
+    width: 100%;
+    max-width: 600px;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+.search img {
+    width: 22px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.user img:nth-child(2) {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user img {
+    width: 22px;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-profile p {
+    font-size: 14px;
+}
+
+.user-profile h1 {
+    font-size: 24px;
+}
+
+.tasks {
+    display: flex;
+    gap: 15px;
+}
+
+.tasks button {
+    background-color: #1992D4;
+    color: white;
+    border: none;
+    padding: 8px 35px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    padding: 30px 40px;
+    background-color: #e2e8f0;
+}
+
+.left-heading {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.grid-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 6px solid #f0b429;
+    min-height: 200px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.card-title {
+    margin-bottom: 8px;
+}
+
+.grid-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.card-tasks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    margin-top: 50px;
+}
+
+.card-tasks img {
+    width: 22px;
+    cursor: pointer;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.announcement-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+}
+
+.announcement {
+    padding: 12px 0;
+}
+
+.announcement h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.announcement p {
+    font-size: 13px;
+    color: #555;
+}
+
+.announcement-card hr {
+    border: none;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 8px 0;
+}
+
+.trending-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+}
+
+.trending-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.trending-content img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tending-user p:first-child {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.tending-user p:last-child {
+    font-size: 13px;
+    color: #666;
+}
+
+.announcement-heading {
+    margin-bottom: 20px;
+}
